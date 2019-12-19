@@ -12,7 +12,6 @@ public class CommentTest extends BaseTest {
                 .openCommunitiesMenu()
                 .openOneOfMyCommunity()
                 .clickCommentButton()
-                .clickTextBox()
                 .fillTextBox()
                 .clickTextBoxCommentButton()
                 .verifyTextBox();

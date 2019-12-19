@@ -15,12 +15,6 @@ public class HomePage extends BasePage {
     private By myCommunities = By.xpath("//*[@role='heading' and contains(.,'my communities')]");
     private By communitiesMenu = By.xpath("//*[contains(@aria-label, 'communities' )]");
     private By oneOfMyCommunity = By.xpath("//span[contains(., 'r/java' )]");
-    private By browsePopularPosts = By.xpath("//*[text()='Browse Popular Posts']");
-
-    public HomePage clickBrowsePopularPosts() {
-        findElement(browsePopularPosts).click();
-        return this;
-    }
 
     public Subreddits openOneOfMyCommunity() {
         findElement(oneOfMyCommunity).click();

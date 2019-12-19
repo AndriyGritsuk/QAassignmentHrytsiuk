@@ -28,11 +28,6 @@ public class Subreddits extends BasePage {
         Assert.assertFalse(isTextBoxEmpty);
     }
 
-    public Subreddits clickTextBox() {
-        findElement(textBox).click();
-        return this;
-    }
-
     public Subreddits fillTextBox() {
         LocalDateTime dateTime = LocalDateTime.now();
         findElement(textBox).sendKeys(dateTime + " atqc_test");

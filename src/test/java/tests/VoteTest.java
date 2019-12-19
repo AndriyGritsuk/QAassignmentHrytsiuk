@@ -18,7 +18,6 @@ public class VoteTest extends BaseTest{
     public void verifyUserCanDownPost (){
         new LoginForm(driver)
                 .login()
-                .clickBrowsePopularPosts()
                 .openCommunitiesMenu()
                 .openOneOfMyCommunity()
                 .verifyDownVote();
